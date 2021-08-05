@@ -74,5 +74,5 @@ cd /c/Users/max/Jora2
 
 
 
-Enter file in which to save the key (/c/Users/max/.ssh/id_rsa):
+
 
