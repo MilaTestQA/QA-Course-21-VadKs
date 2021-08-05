@@ -1,0 +1,78 @@
+ ДЗ #1
+
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я - Ответ: pwd
+
+2) Создать папку - Ответ: mkdir folder_name (Jora)
+
+3) Зайти в папку - Ответ: cd Jora 
+
+4) Создать 3 папки - Ответ: mkdir -p {Jora1,Jora2,Jora3}
+
+5) Зайти в любоую папку - Ответ: cd /c/Users/max/Jora2
+
+6) Создать 5 файлов (3 txt, 2 json) - Ответ: touch A1.txt touch A2.txt touch A3.txt touch A1.json touch A11.json
+
+7) Создать 3 папки - Ответ:  mkdir -p {Bobr1,Bobr2,Bobr3}
+
+8) Вывести список содержимого папки- 
+Ответ: ls /c/Users/max/Jora2
+1.json  QA1.txt  2.json  QA2.txt  QA3.txt
+
+9) + Открыть любой txt файл - Ответ: Vim A1.txt
+
+10) + написать туда что-нибудь, любой текст. -Ответ: Hello, World!
+
+11) + сохранить и выйти. Ответ: :wq
+
+12) Выйти из папки на уровень выше Ответ: cd Jora2
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку Ответ: mv QA3.txt FolderMV
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку Ответ: cp QA1.txt QA2.txt /c/Users/max/Jora2/FolderCP/
+
+15) Найти файл по имени find QA2.txt
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+
+17) вывести несколько первых строк из текстового файла - Ответ head -2 A1.txt
+Hello, World! Hello, World!
+Good night, World!
+
+
+18) вывести несколько последних строк из текстового файла - Ответ tail -2 A1.txt
+Good afternoon, World!
+Good evening, World!
+
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+
+20) вывести дату и время
+ date
+Thu Aug  5 23:06:22 RTZ 2021
+
+
+
+Задание *
+1)Отправить http запрос на сервер. 
+https://api.quarantine.country/api/v1/regions 
+
+Овет: 
+curl POST https://api.quarantine.country/api/v1/regions
+еще вариент: curl -i https://api.quarantine.country/api/v1/regions
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+#!/bin/bash
+cd Jora
+mkdir -p {Jora1,Jora2,Jora3}
+cd /c/Users/max/Jora2
+
+Не поняла как делать, через echo не получилось, хотя, я понимаю, что echo это, наверное, для текста скорее..
+
+
+
+
+
+Enter file in which to save the key (/c/Users/max/.ssh/id_rsa):
+
